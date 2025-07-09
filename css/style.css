@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box; /* Reset box-sizing to border-box for all elements */
+}
+
+
+/********************************** HEADER STYLES ***********************************/
+/* Reset default margin and padding */
+.navbar{
+    background-color: #333; /* Dark background for the navbar */
+    overflow: hidden; /* Clear floats */
+    position: fixed; /* Fixed position to keep the navbar at the top */
+    top: 0; /* Position at the top of the page */
+    width: 100%; /* Full width */ 
+}
+
+/* Style the links inside the navbar */
+.navbar ul {
+    list-style-type: none; /* Remove default list style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */ 
+}
+
+/* Navbar links */
+.navbar li {
+    float: left; /* Align links horizontally */
+}
+
+/* Navbar list */
+.nav-list{
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    align-items: center; /* Vertically center the items */
+    height: 60px; /* Set a height for the navbar */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navbar list a */
+.navbar li a {
+    display: block; /* Make the links block elements */
+    color: rgb(255, 255, 255); /* White text color */ 
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Padding for the links */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Arial', sans-serif; /* Set a font family */
+    font-size: 20px; /* Set a font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border-radius: 30px; /* Rounded corners for the links */
+}
+
+/* Change color on hover */
+.navbar li a:hover {
+    background-color: #1b42acbb;
+    border-radius: 30px;
+}
+
+/** * Responsive design for smaller screens */
+@media screen and (max-width: 500px) {
+    .navbar ul {
+        flex-direction: column; /* Stack the items vertically */
+    }
+
+    .navbar li {
+        float: none; /* Remove float for vertical alignment */
+    }
+
+    .navbar li a {
+        text-align: left; /* Align text to the left */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .nav-list {
+        height: auto; /* Adjust height for stacked layout */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar li a {
+        font-size: 16px; /* Adjust font size for smaller screens */ 
+    }
+    
+    
+}
+
+/********************************** MAIN CONTENT STYLES ***********************************/
+/* Main content styles */   
+main {
+    padding: 20px; /* Add padding to the main content */
+    margin-top: 150px; /* Add margin to avoid overlap with fixed navbar */
+}
+
