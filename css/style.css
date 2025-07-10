@@ -1,16 +1,15 @@
-* {
-    box-sizing: border-box; /* Reset box-sizing to border-box for all elements */
+main {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    width: 100vw; /* Set width to occupy the entire viewport width */
 }
-
-
 /********************************** HEADER STYLES ***********************************/
 /* Reset default margin and padding */
 .navbar{
-    background-color: #333; /* Dark background for the navbar */
-    overflow: hidden; /* Clear floats */
-    position: fixed; /* Fixed position to keep the navbar at the top */
-    top: 0; /* Position at the top of the page */
-    width: 100%; /* Full width */ 
+    background-color: #333333; /* Dark background for the navbar */
+    overflow: hidden; /* Clear floats */ 
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 /* Style the links inside the navbar */
@@ -31,18 +30,17 @@
     justify-content: center; /* Center the items */
     align-items: center; /* Vertically center the items */
     height: 60px; /* Set a height for the navbar */
-    margin: 0; /* Remove default margin */
-}
+}    
 
 /* Navbar list a */
 .navbar li a {
     display: block; /* Make the links block elements */
     color: rgb(255, 255, 255); /* White text color */ 
     text-align: center; /* Center the text */
-    padding: 14px 16px; /* Padding for the links */
+    padding: 24px 16px; /* Padding for the links */
     text-decoration: none; /* Remove underline from links */
     font-family: 'Arial', sans-serif; /* Set a font family */
-    font-size: 20px; /* Set a font size */
+    font-size: 1.5rem; /* Set a font size */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
     border-radius: 30px; /* Rounded corners for the links */
 }
@@ -55,6 +53,13 @@
 
 /** * Responsive design for smaller screens */
 @media screen and (max-width: 500px) {
+    .navbar {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack the navbar items vertically */
+        align-items: center; /* Center the items */
+        padding: 10px; /* Add padding around the navbar */
+    }
+
     .navbar ul {
         flex-direction: column; /* Stack the items vertically */
     }
@@ -64,8 +69,7 @@
     }
 
     .navbar li a {
-        text-align: left; /* Align text to the left */
-        padding: 10px 20px; /* Adjust padding for smaller screens */
+        padding: 15px 20px; /* Adjust padding for smaller screens */
     }
 
     .nav-list {
@@ -73,18 +77,159 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    .navbar li a {
-        font-size: 16px; /* Adjust font size for smaller screens */ 
-    }
-    
-    
-}
+
 
 /********************************** MAIN CONTENT STYLES ***********************************/
-/* Main content styles */   
-main {
-    padding: 20px; /* Add padding to the main content */
-    margin-top: 150px; /* Add margin to avoid overlap with fixed navbar */
+/* Styles for the skills list items */
+.about-me {
+    margin: 0 auto; /* Center the article */
+    padding: 20px; /* Add padding around the article */
+    background-color: #748cf3; /* Light background color for the article */
+    border-radius: 8px; /* Rounded corners for the article */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+} 
+
+
+.about-me h1 {
+    font-size: 3rem; /* Set a larger font size for the heading */
+    color: #000000; /* White text color for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    text-align: center; /* Center the heading text */
+}
+
+.about-me p {
+    font-size: 1.5rem; /* Set a larger font size for paragraphs */
+    color: #000000; /* White text color for paragraphs */
+    margin-bottom: 20px; /* Add space below paragraphs */
+}
+
+@media screen and (max-width: 500px) {
+    .about-me {
+        margin: 0 auto; /* Center the about-me section */
+    }
+    .about-me h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-me p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Styles for the main content area */
+article{
+    font-family: 'Arial', sans-serif; /* Set a font family for the article */
+    line-height: 1.6; /* Set line height for better readability */
+    color: #333; /* Dark text color for contrast */
+    padding-top: 20px; /* Add padding around the article */
+    background-color: #f4f4f4; /* Light background color for the article */
+    border-radius: 8px; /* Rounded corners for the article */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Styles for the article introduction */
+#introduction {
+    font-size: 1.3rem; /* Set a larger font size for the introduction */
+    color: #000000; /* Dark text color for the introduction */
+    margin-bottom: 20px; /* Add space below the introduction */
+    text-align: left; /* Center the introduction text */
+} 
+
+/* Styles for the article subheadings */
+h3{
+    font-size: 2rem; /* Set a larger font size for subheadings */
+    color: #000000; /* Dark text color for subheadings */
+    margin-top: 30px; /* Add space above subheadings */
+    margin-bottom: 15px; /* Add space below subheadings */
+    text-align: left; /* Center the subheading text */
+}
+
+/* Styles for the skills list */
+.skills-list{
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items */
+    gap: 10px;
+    font-size: 1rem; /* Set a larger font size for the list items */
+    font-weight: bold;
+    color: #000000; /* Dark text color for the list items */
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#experience{
+    font-size: 1.3rem; /* Set a larger font size for the experience section */
+    color: #000000; /* Dark text color for the experience section */
+    margin-top: 20px; /* Add space above the experience section */
+    margin-bottom: 20px; /* Add space below the experience section */
+    text-align: left; /* Center the experience text */
+}
+
+.study{
+    font-size: 1.3rem; /* Set a larger font size for the study section */
+    color: #000000; /* Dark text color for the study section */
+    margin-top: 20px; /* Add space above the study section */
+    margin-bottom: 20px; /* Add space below the study section */
+    text-align: left; /* Center the study text */
+}
+
+.skills-list-full{
+    list-style-type: disc; /* Use disc bullets for the list */
+    text-align: left; /* Align the list items to the left */
+    padding-left: 20px; /* Add padding to the left for indentation */
+    font-size: large; /* Set a larger font size for the list items */
+    color: #000000; /* Dark text color for the list items */
+    margin-bottom: 20px; /* Add space below the list */
+}
+
+.project-description{
+    font-size: 1.3rem; /* Set a larger font size for the project description */
+    color: #000000; /* Dark text color for the project description */
+    margin-top: 20px; /* Add space above the project description */
+    margin-bottom: 20px; /* Add space below the project description */
+    text-align: left; /* Center the project description text */
+}
+
+.projects{
+    margin: 20px auto; /* Center the article */
+    padding: 20px; /* Add padding around the article */
+    background-color: #748cf3; /* Light background color for the article */
+    border-radius: 8px; /* Rounded corners for the article */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.future-goals-section{
+    margin: 20px auto; /* Center the article */
+    padding: 20px; /* Add padding around the article */
+    background-color: #748cf3; /* Light background color for the article */
+    border-radius: 8px; /* Rounded corners for the article */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+.practice{
+    font-size: 1.3rem; /* Set a larger font size for the practice section */
+    color: #000000; /* Dark text color for the practice section */
+    margin-top: 20px; /* Add space above the practice section */
+    margin-bottom: 20px; /* Add space below the practice section */
+    text-align: left; /* Center the practice text */
+}
+
+.future-goals{
+    font-size: 1.3rem; /* Set a larger font size for the future goals section */
+    color: #000000; /* Dark text color for the future goals section */
+    margin-top: 20px; /* Add space above the future goals section */
+    margin-bottom: 20px; /* Add space below the future goals section */
+    text-align: left; /* Center the future goals text */
+}
+
+.other-tools{
+    font-size: 1.3rem; /* Set a larger font size for the other tools section */
+    color: #000000; /* Dark text color for the other tools section */
+    margin-top: 20px; /* Add space above the other tools section */
+    margin-bottom: 20px; /* Add space below the other tools section */
+    text-align: left; /* Center the other tools text */
 }
 
