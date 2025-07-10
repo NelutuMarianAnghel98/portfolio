@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre mí</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li class="nav-logo"><a href="/">Mi Portafolio</a>
-                    <li><a href="/pages/about.html">Sobre mí</a></li>
-                    <li><a href="/pages/projects.html">Proyectos</a></li>
-                    <li><a href="/pages/contact.html">Contacto</a></li>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="/pages/about.html">Sobre mí</a></li>
+        <li><a href="/pages/projects.html">Proyectos</a></li>
+        <li><a href="/pages/contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </main>
-    <footer>
-    
-    </footer>
-    <script src="/js/app.js"></script>
+  <main>
+    <section class="projects">
+      <h2><i class="fas fa-laptop-code"></i> Proyectos realizados</h2>
+      <p class="project-description">
+        Diseño y desarrollo de proyectos web completos, incluyendo la planificación, implementación y optimización para garantizar una experiencia de usuario excepcional.
+      </p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>CodeSphere</h3>
+          <ul>
+            <li>Proyecto final de mi formación como Full Stack Developer.</li>
+            <li>Sitio web ficticio de una empresa de desarrollo web.</li>
+            <li>Incluye: <code>index.php</code>, <code>noticias.php</code>, <code>registro.php</code>, <code>login.php</code>, <code>perfil.php</code>, <code>citaciones.php</code> y paneles de administración.</li>
+            <li><strong>Tecnologías:</strong> HTML5, CSS3, JavaScript, PHP, MySQL, MySQL Workbench.</li>
+            <li><strong>Roles:</strong> visitante, usuario registrado y administrador.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h3>Tutor virtual educativo con Firebase + WebRTC + Firestore</h3>
+          <ul>
+            <li>Sistema multilingüe con autenticación (Firebase Auth).</li>
+            <li>Firestore para bloques y objetivos de aprendizaje.</li>
+            <li>Reproductor de voz en tiempo real con WebRTC y OpenAI Realtime API.</li>
+            <li>Gestión de sesiones y progreso visual persistente.</li>
+            <li><strong>Archivos clave:</strong> <code>tutor-virtual.js</code>, <code>mi-tutor.js</code>, <code>cargar-bloque.js</code>.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Aquí puedes añadir redes sociales o derechos de autor -->
+  </footer>
+
+  <script src="/js/app.js"></script>
 </body>
 </html>
