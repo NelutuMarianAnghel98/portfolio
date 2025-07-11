@@ -493,3 +493,36 @@ body {
     color: #1da1f2;
     /* Cambia el color al pasar el ratón */
 }
+
+/* ========== DESCARGA DE CURRÍCULUM ========== */
+.resume-download {
+    margin: 20px auto;
+    padding: 20px;
+    background: radial-gradient(ellipse at right, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resume-download p {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0072c6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #005ea6;
+    transform: scale(1.05);
+}
+
