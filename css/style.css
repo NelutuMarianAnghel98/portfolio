@@ -1,7 +1,9 @@
 /* ========== ESTILOS GENERALES ========== */
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     background-color: #fefce8;
     color: #222;
     line-height: 1.6;
@@ -85,25 +87,7 @@ body {
   }
   
   /* ========== PROYECTOS ========== */
-  .project-card {
-    background: #fff9c4;
-    padding: 20px;
-    border-left: 6px solid #f4a261;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
   
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-  }
-  
-  .project-card ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
   
   /* ========== TEXTOS ========== */
   p {
@@ -137,7 +121,8 @@ body {
   }
   
 .projects {
-    background: linear-gradient(to bottom, #fffbe6, #ffe680);
+  background: linear-gradient(135deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+  /* Linear gradient from left to right */
     padding: 40px;
     border-radius: 10px;
     font-family: 'Segoe UI', sans-serif;
@@ -161,8 +146,11 @@ body {
   .project-grid {
     display: grid;
     gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
   
+
+/*                                                 ========== TARJETAS DE PROYECTOS ========== */
   .project-card {
     background: #fff9c4;
     padding: 20px;
@@ -190,51 +178,19 @@ body {
   }
   
   .project-card code {
-    background: #f0f0f0;
+    background: #f5e6a2;
     padding: 2px 6px;
     border-radius: 4px;
     font-family: monospace;
   }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    background-color: #ffa6007c;
+  }
   
 
-.future-goals-section {
-    margin: 20px auto;
-    /* Center the article */
-    padding: 20px;
-    /* Add padding around the article */
-    background: radial-gradient(ellipse at left, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
-    /* Radial gradient from left to right */
-    border-radius: 8px;
-    /* Rounded corners for the article */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow for depth */
-}
-
-.practice {
-    font-size: 1.3rem;
-    /* Set a larger font size for the practice section */
-    color: #000000;
-    /* Dark text color for the practice section */
-    margin-top: 20px;
-    /* Add space above the practice section */
-    margin-bottom: 20px;
-    /* Add space below the practice section */
-    text-align: left;
-    /* Center the practice text */
-}
-
-.future-goals {
-    font-size: 1.3rem;
-    /* Set a larger font size for the future goals section */
-    color: #000000;
-    /* Dark text color for the future goals section */
-    margin-top: 20px;
-    /* Add space above the future goals section */
-    margin-bottom: 20px;
-    /* Add space below the future goals section */
-    text-align: left;
-    /* Center the future goals text */
-}
 
 .other-tools {
     font-size: 1.3rem;
@@ -249,17 +205,30 @@ body {
     /* Remove default padding */
 }
 
+.about-me {
+  margin: 20px auto;
+  /* Center the article */
+  padding: 20px;
+  /* Add padding around the article */
+  background: linear-gradient(135deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+  /* Linear gradient from left to right */
+  border-radius: 8px;
+  /* Rounded corners for the article */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* Enhanced shadow for more depth */
+}
+
 .languages {
-    margin: 20px auto;
-    /* Center the article */
-    padding: 20px;
-    /* Add padding around the article */
-    background: radial-gradient(ellipse at right, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
-    /* Radial gradient from left to right */
-    border-radius: 8px;
-    /* Rounded corners for the article */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow for depth */
+  margin: 20px auto;
+  /* Center the article */
+  padding: 20px;
+  /* Add padding around the article */
+  background: linear-gradient(305deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+  /* Linear gradient from left to right */
+  border-radius: 8px;
+  /* Rounded corners for the article */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* Enhanced shadow for more depth */
 }
 
 .studies {
@@ -267,12 +236,53 @@ body {
     /* Center the article */
     padding: 20px;
     /* Add padding around the article */
-    background: radial-gradient(ellipse at left, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
-    /* Radial gradient from left to right */
+    background: linear-gradient(135deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+    /* Linear gradient from left to right */
     border-radius: 8px;
     /* Rounded corners for the article */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow for depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow for more depth */
+}
+
+.future-goals-section {
+  margin: 20px auto;
+  /* Center the article */
+  padding: 20px;
+  /* Add padding around the article */
+  background: linear-gradient(135deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+  /* Radial gradient from left to right */
+  border-radius: 8px;
+  /* Rounded corners for the article */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow for depth */
+}
+
+
+.internship {
+  margin: 20px auto;
+  /* Center the article */
+  padding: 20px;
+  /* Add padding around the article */
+  background: linear-gradient(305deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+  /* Linear gradient from left to right */
+  border-radius: 8px;
+  /* Rounded corners for the article */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow for depth */
+}
+
+
+.future-goals {
+  font-size: 1.3rem;
+  /* Set a larger font size for the future goals section */
+  color: #000000;
+  /* Dark text color for the future goals section */
+  margin-top: 20px;
+  /* Add space above the future goals section */
+  margin-bottom: 20px;
+  /* Add space below the future goals section */
+  text-align: left;
+  /* Center the future goals text */
 }
 
 #master {
@@ -285,34 +295,6 @@ body {
     font-size: 25px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-.project-list-1,
-.project-list-2,
-.project-list-3 {
-    padding: 0;
-    /* Remove default padding */
-    margin: 0;
-    /* Remove default margin */
-    display: flex;
-    /* Use flexbox for layout */
-    flex-direction: column;
-    /* Stack items vertically */
-    gap: 0px;
-    /* Add space between items */
-    font-size: 1.2rem;
-    /* Set a larger font size for the project list items */
-    color: #000000;
-    /* Dark text color for the project list items */
-    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.2);
-    /* Adjusted shadow for more depth */
-    border-radius: 8px;
-    /* Rounded corners for the project list */
-    margin: 10px 0;
-    padding: 20px;
-    background: radial-gradient(ellipse at center, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 80%);
-    /* Radial gradient from left to right */
-}
-
 
 
 .project-description p::before {
@@ -340,68 +322,11 @@ body {
     text-decoration-line: underline;
 }
 
-.internship {
-    margin: 20px auto;
-    /* Center the article */
-    padding: 20px;
-    /* Add padding around the article */
-    background: radial-gradient(ellipse at right, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
-    /* Radial gradient from left to right */
-    border-radius: 8px;
-    /* Rounded corners for the article */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow for depth */
-}
-
-
-/**************Styles for the contact page **************/
-
-.social-media {
-    margin: 20px auto;
-    /* Center the article */
-    padding: 20px;
-    /* Add padding around the article */
-    background: radial-gradient(ellipse at left, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
-    /* Radial gradient from left to right */
-    border-radius: 8px;
-    /* Rounded corners for the article */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow for depth */
-}
-
-#greeting {
+.internship h3 {
     font-size: 1.5rem;
-    /* Set a larger font size for the greeting */
-    color: #000000;
-    /* Dark text color for the greeting */
-    margin-bottom: 20px;
-    /* Add space below the greeting */
-    text-align: left;
-    /* Center the greeting text */
-}
-
-.contact {
-    margin: 0 auto;
-    /* Center the article */
-    padding: 20px;
-    /* Add padding around the article */
-    background: radial-gradient(ellipse at left, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
-    /* Radial gradient from left to right */
-    border-radius: 8px;
-    /* Rounded corners for the article */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow for depth */
-}
-
-#contact-info {
-    font-size: 1.3rem;
-    /* Set a larger font size for the contact info */
-    color: #000000;
-    /* Dark text color for the contact info */
-    margin-bottom: 20px;
-    /* Add space below the contact info */
-    text-align: left;
-    /* Center the contact info text */
+    /* Set a larger font size for the section title */
+    color: #333;
+    /* Dark text color for the section title */
 }
 
 #mail {
@@ -426,20 +351,8 @@ body {
     /* Center the greeting text */
 }
 
-#follow {
-    font-size: 1.3rem;
-    /* Set a larger font size for the follow section */
-    color: #000000;
-    /* Dark text color for the follow section */
-    margin-bottom: 20px;
-    /* Add space below the follow section */
-    text-align: center;
-    /* Center the follow text */
-}
-
-
 .contact {
-    background: linear-gradient(to right, #ffe680, #fff8dc);
+  background: linear-gradient(135deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -463,28 +376,10 @@ body {
     margin-right: 8px;
 }
 
-.redes-sociales {
-    margin-top: 20px;
-}
-
-.redes-sociales a {
-    font-size: 1.8rem;
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.redes-sociales a:hover {
-    transform: scale(1.2);
-    color: #f4a261;
-}
-
-
 .social-links a {
     font-size: 2rem;
     margin: 0 10px;
-    color: #333;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -496,36 +391,73 @@ body {
 
 /* ========== DESCARGA DE CURRÍCULUM ========== */
 .resume-download {
-    margin: 20px auto;
-    padding: 20px;
-    background: radial-gradient(ellipse at right, rgba(243, 201, 61, 0.863) 0%, rgba(243, 201, 61, 0.2) 100%);
-    border-radius: 8px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(305deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+  border-radius: 8px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .resume-download p {
-    font-size: 1.2rem;
-    color: #000000;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 10px;
+  animation: slideIn 1s ease-in-out;
 }
 
 .download-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0072c6;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0072c6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: bounceIn 1s ease-in-out;
 }
 
 .download-btn:hover {
-    background-color: #005ea6;
-    transform: scale(1.05);
+  background-color: #005ea6;
+  transform: scale(1.05);
 }
 
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* ========== FOOTER ========== */
 #copy {
     text-align: center;
     margin-top: 20px;
