@@ -1,100 +1,124 @@
-/* ========== ESTILOS GENERALES ========== */
+/*********************************************************************************************************************************************************************************
+/**  =============================================================== ESTILOS GENERALES ==========================================================================================/
+/**================================================================================================================================================================================**/
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    background-color: #fefce8;
-    color: #222;
-    line-height: 1.6;
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif; /* Fuente principal */
+    font-size: 16px; /* Tamaño de fuente base */
+    font-weight: 400; /* Peso de fuente normal */
+    background-color: #fefce8; /* Color de fondo */
+    color: #000000; /* Color de texto */
+    line-height: 1.6; /* Espaciado entre líneas */
   }
-  
+
   main {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
+    padding: 40px 20px; /* Espaciado interno del main */
+    max-width: 1000px; /* Ancho máximo del main */
+    margin: auto; /* Centrado del main */
   }
   
-  /* ========== NAVBAR ========== */
+/**======================================================================= NAVBAR  (1 Página) ========== */
   .navbar {
-    background: linear-gradient(to right, #333, #555);
-    padding: 10px 0;
-    border-radius: 0 0 8px 8px;
+    background: linear-gradient(to right, #000000, #555); /* Degradado */
+    padding: 10px 0; /* Espaciado interno de la navbar */
+    border-radius: 0 0 8px 8px; /* Bordes redondeados inferiores */
   }
   
   .nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: center; /* Centrado horizontal */
+    list-style: none; /* Elimina los puntos de la lista */
+    gap: 40px; /* Espacio entre los elementos */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
   }
   
-  .nav-list li a {
-    color: gold;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+  .nav-list li a { 
+    color: gold; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Peso de fuente negrita */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave al cambiar el color */
   }
   
   .nav-list li a:hover {
-    color: #f4a261;
+    color: #f4a261; /* Cambia el color al pasar el ratón */ 
+  }
+
+  #introduction{
+    text-align: left; /* Centrado del texto */
+    margin-top: 20px; /* Espacio encima de la introducción */
+    font-size: 1.2rem; /* Tamaño de fuente de la introducción */
+    color: #000000; /* Color del texto de la introducción */
+  }
+
+  #experience{
+    text-align: left; /* Centrado del texto */
+    margin-top: 20px; /* Espacio encima de la experiencia */
+    font-size: 1.2rem; /* Tamaño de fuente de la experiencia */
+    color: #000000; /* Color del texto de la experiencia */
+  }
+
+  .study{
+    text-align: left; /* Centrado del texto */
+    margin-top: 20px; /* Espacio encima de los estudios */
+    font-size: 1.2rem; /* Tamaño de fuente de los estudios */
+    color: #000000; /* Color del texto de los estudios */
+  }
+
+  .practice{
+    text-align: left; /* Centrado del texto */
+    margin-top: 20px; /* Espacio encima de la práctica */
+    font-size: 1.2rem; /* Tamaño de fuente de la práctica */
+    color: #000000; /* Color del texto de la práctica */
   }
   
-  /* ========== TITULOS Y SECCIONES ========== */
+  /**  ======================================================================== TITULOS Y SECCIONES ========== */
   h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    color: #1a1a1a;
+    font-size: 2.2rem; /* Tamaño de fuente del título principal */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #000000; /* Color del título */
+    text-align: center; /* Centrado del título */
   }
   
   h3 {
-    font-size: 1.5rem;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    color: #444;
+    font-size: 1.5rem; /* Tamaño de fuente de los subtítulos */
+    margin-top: 40px; /* Espacio encima del subtítulo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+    color: #000000; /* Color del subtítulo */
   }
   
   h4 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-    color: #333;
+    font-size: 1.3rem; /* Tamaño de fuente de los subtítulos secundarios */
+    margin-bottom: 8px; /* Espacio debajo del subtítulo secundario */
+    color: #000000; /* Color del subtítulo secundario */
   }
   
-  /* ========== LISTAS DE HABILIDADES ========== */
-  .skills-list,
-  .skills-list-full {
-    list-style: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
+  /**  ========================================================================= LISTAS DE HABILIDADES ========== */
+  .skills-list, /* Lista de habilidades */
+  .skills-list-full { /* Lista de habilidades completa */
+    list-style: disc; /* Estilo de lista con puntos */
+    padding-left: 20px; /* Espacio a la izquierda */
+    margin-bottom: 20px; /* Espacio debajo de la lista */
   }
   
-  .skills-list li,
-  .skills-list-full li {
-    margin-bottom: 6px;
-    font-weight: 500;
+  .skills-list-full li { /* Elementos de la lista de habilidades completa */
+    margin-bottom: 6px; /* Espacio debajo de cada elemento */
+    font-weight: 500; /* Peso de fuente medio */
+    background-color: #ffe4cf5b;
   }
-  
-  /* ========== SECCIONES ========== */
-  section {
-    margin-bottom: 40px;
-    background: #fffbea;
-    padding: 20px 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+  @media (max-width: 450px) 
+  {
+    .skills-list {
+      font-size: 1.2rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+      text-align: center;
+      list-style: none; /* Elimina el bullet point */
+      padding: 0; /* Elimina el padding por defecto */
+    }
   }
-  
-  /* ========== PROYECTOS ========== */
-  
-  
-  /* ========== TEXTOS ========== */
-  p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #333;
-  }
+  /**  ========================================================================== TEXTOS ========== */
+ 
   
   code {
     background-color: #f0f0f0;
@@ -167,7 +191,7 @@ body {
   
   .project-card h3 {
     font-size: 1.3rem;
-    color: #222;
+    color: #000000;
     margin-bottom: 10px;
   }
   
@@ -325,7 +349,7 @@ body {
 .internship h3 {
     font-size: 1.5rem;
     /* Set a larger font size for the section title */
-    color: #333;
+    color: #000000;
     /* Dark text color for the section title */
 }
 
@@ -424,6 +448,27 @@ body {
   transform: scale(1.05);
 }
 
+.resume-download a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.resume-download a:hover {
+  text-decoration: underline;
+
+}
+/* ========== ANIMACIONES ========== */
+
+#fireworks-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que los eventos del ratón pasen a los elementos debajo */
+    z-index: 9999; /* Asegura que el contenedor esté por encima de otros elementos */
+}
+
 /* Keyframes for animations */
 @keyframes fadeIn {
   from {
@@ -445,6 +490,17 @@ body {
   }
 }
 
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
 @keyframes bounceIn {
   from {
     transform: scale(0.8);
@@ -455,6 +511,8 @@ body {
     opacity: 1;
   }
 }
+
+
 
 
 /* ========== FOOTER ========== */
