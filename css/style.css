@@ -16,6 +16,10 @@ body {
     max-width: 1000px; /* Ancho máximo del main */
     margin: auto; /* Centrado del main */
   }
+
+  .about-all{
+    background-color: #aff7a1;
+  }
   
 /**======================================================================= NAVBAR  (1 Página) ========== */
   .navbar {
@@ -42,7 +46,7 @@ body {
   }
   
   .nav-list li a:hover {
-    color: #f4a261; /* Cambia el color al pasar el ratón */ 
+    color: #06a600; /* Cambia el color al pasar el ratón */
   }
 
   #introduction{
@@ -95,7 +99,16 @@ body {
   }
   
   /**  ========================================================================= LISTAS DE HABILIDADES ========== */
-  .skills-list, /* Lista de habilidades */
+  .skills-list{  /* Lista de habilidades */
+    list-style: none; /* Elimina el bullet point */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center; /* Centrado horizontal de los elementos */
+  }
+  
   .skills-list-full { /* Lista de habilidades completa */
     list-style: disc; /* Estilo de lista con puntos */
     padding-left: 20px; /* Espacio a la izquierda */
@@ -150,6 +163,7 @@ body {
     padding: 40px;
     border-radius: 10px;
     font-family: 'Segoe UI', sans-serif;
+    background-color: #06a600;
   }
   
   .projects h2 {
@@ -178,7 +192,7 @@ body {
   .project-card {
     background: #fff9c4;
     padding: 20px;
-    border-left: 6px solid #f4a261;
+    border-left: 6px solid #ffd900;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -211,7 +225,7 @@ body {
   .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-    background-color: #ffa6007c;
+    background-color: #00ff40;
   }
   
 
@@ -240,6 +254,7 @@ body {
   /* Rounded corners for the article */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   /* Enhanced shadow for more depth */
+  background-color: #06a600;
 }
 
 .languages {
@@ -253,6 +268,7 @@ body {
   /* Rounded corners for the article */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   /* Enhanced shadow for more depth */
+  background-color: #06a600;
 }
 
 .studies {
@@ -266,6 +282,21 @@ body {
     /* Rounded corners for the article */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     /* Enhanced shadow for more depth */
+    background-color: #06a600;
+}
+
+.internship {
+  margin: 20px auto;
+  /* Center the article */
+  padding: 20px;
+  /* Add padding around the article */
+  background: linear-gradient(305deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
+  /* Linear gradient from left to right */
+  border-radius: 8px;
+  /* Rounded corners for the article */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow for depth */
+  background-color: #06a600;
 }
 
 .future-goals-section {
@@ -279,22 +310,8 @@ body {
   /* Rounded corners for the article */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   /* Add a subtle shadow for depth */
+  background-color: #06a600;
 }
-
-
-.internship {
-  margin: 20px auto;
-  /* Center the article */
-  padding: 20px;
-  /* Add padding around the article */
-  background: linear-gradient(305deg, rgba(243, 201, 61, 0.9) 0%, rgba(243, 201, 61, 0.5) 50%, rgba(243, 201, 61, 0.2) 100%);
-  /* Linear gradient from left to right */
-  border-radius: 8px;
-  /* Rounded corners for the article */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow for depth */
-}
-
 
 .future-goals {
   font-size: 1.3rem;
@@ -364,6 +381,7 @@ body {
     /* Center the email text */
 }
 
+
 #greetings{
     font-size: 1.5rem;
     /* Set a larger font size for the greeting */
@@ -382,6 +400,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
+    background-color: #06a600;
 }
 
 .contact h2 {
